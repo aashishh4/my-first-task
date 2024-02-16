@@ -1,0 +1,173 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+
+.LoginPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+}
+
+.LoginPage h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  margin: 0;
+  padding-bottom: 16px
+}
+
+.LoginPage label {
+  margin-bottom: 10px;
+  font-family: Montserrat, sans-serif;
+}
+
+.LoginInput {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 230px;
+  position: relative;
+}
+
+div#errormsg {
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  font-size: 10px;
+}
+
+.LoginInput input {
+  padding: 10px;
+  width: 100%;
+  background-color: transparent;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.LoginPage button {
+  color: #fff;
+  cursor: pointer;
+  background-color: #3898ec;
+  border: 0;
+  border-radius: 0;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 13px;
+  width: 250px;
+  margin-top: 5px;
+}
+
+.LogoutBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.LogoutBtn button {
+  background-color: #3898ec;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+  border-radius: 0;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+.LogoSection{
+  padding: 5px 20px;
+}
+.MainLogo
+{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 15px;
+  
+}
+
+.Toastify .Toastify__toast {
+  display:flex;
+  align-items:center;
+  position:relative;
+}
+.Toastify .Toastify__toast button{
+  position:absolute;
+  width:30px;
+  height:30px;
+  right:0;
+  top:0px;
+  background:transparent;
+}
+.Toastify .Toastify__toast button:after{
+  content:"X";
+  color:#000;
+  font-weight:bold;
+  font-size:15px;
+}
+
+.Loading {
+  position: absolute;
+  background: #000c;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(6px);
+}
+
+.loader {
+  display: flex;
+  align-items: center;
+}
+
+.bar {
+  display: inline-block;
+  width: 3px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, .5);
+  border-radius: 10px;
+  animation: scale-up4 1s linear infinite;
+}
+
+.bar:nth-child(2) {
+  height: 35px;
+  margin: 0 5px;
+  animation-delay: .25s;
+}
+
+.bar:nth-child(3) {
+  animation-delay: .5s;
+}
+
+@keyframes scale-up4 {
+  20% {
+    background-color: #3898ec;
+    transform: scaleY(1.5);
+  }
+
+  40% {
+    transform: scaleY(1);
+  }
+}
